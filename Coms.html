@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Audífonos | JASHSTORE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        .product img {
+            width: 200px;
+            margin-right: 20px;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .product h2 {
+            margin: 0;
+            color: #333;
+        }
+        .product p {
+            color: #555;
+        }
+        .price {
+            font-size: 22px;
+            color: #e60000;
+            font-weight: bold;
+        }
+        .buy-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #e60000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .buy-button:hover {
+            background: #b30000;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1a1a1a;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JASHSTORE - Los Mejores Audífonos y Accesorios</h1>
+    </header>
+
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container" id="productos">
+        <h2>Nuestros Audífonos</h2>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Accesorios De Iphone">
+            <div class="product-info">
+                <h2>Accesorios De Iphone</h2>
+                <p>Disfruta de un sonido envolvente con conexión Bluetooth y batería de larga duración.</p>
+                <p class="price">$99.99</p>
+                <a href="#" class="buy-button">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Cargador De Iphone">
+            <div class="product-info">
+                <h2>Cargador De Iphone</h2>
+                <p>7.1.</p>
+                <p class="price">$129.99</p>
+                <a href="#" class="buy-button">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Audífonos De Iphone">
+            <div class="product-info">
+                <h2>Audífonos De Iphone</h2>
+                <p>Resistentes al agua y sudor, ideales para hacer ejercicio con la mejor calidad de sonido, Diseño ergonómico con micrófono incorporado y sonido envolvente .</p>
+                <p class="price">$300.00</p>
+                <a href="#" class="buy-button">Comprar Ahora</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes dudas o deseas más información, contáctanos:</p>
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AudioMax - Todos los derechos reservados a jashstore</p>
+    </footer>
+
+</body>
+</html>
